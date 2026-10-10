@@ -281,7 +281,7 @@ No system is perfectly secure. If a breach occurs that is likely to result in a 
 
 ## 12. Age requirement
 
-Opora is intended for adults aged **18 and over**. We do not knowingly collect personal data from anyone under 18.
+Opora is intended for adults aged **18 and over**. Before the first conversation, the App asks you to confirm that you are. We do not knowingly collect personal data from anyone under 18.
 
 If you believe someone under 18 is using Opora, write to **[SUPPORT_EMAIL]** and we will delete the account and its data promptly.
 

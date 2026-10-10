@@ -18,7 +18,7 @@ CONFIG = {
     "SUPPORT_EMAIL": "ivandiv13@gmail.com",
     # Совпадает с `OnboardingConsent.documentsVersion` в приложении: в базе
     # записано, с какой редакцией человек согласился. Меняешь текст — меняй оба.
-    "EFFECTIVE_DATE": "7 October 2026",
+    "EFFECTIVE_DATE": "11 October 2026",
     # Supabase → Primary Database: eu-west-1
     "SUPABASE_REGION": "the European Union (Ireland)",
     # VPS с api_main и ботом, локация — Нидерланды

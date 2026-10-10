@@ -19,7 +19,7 @@ By using the Service, you agree to these Terms and to our [Privacy Policy]([WEBS
 
 ## 2. Eligibility
 
-You must be **at least 18 years old** to use the Service.
+You must be **at least 18 years old** to use the Service. When you accept these Terms in the App, you confirm that you are.
 
 You confirm that you are not located in a country subject to a comprehensive embargo administered by Georgia, the European Union, or the United States, and that you are not on any applicable restricted-party list.
 
