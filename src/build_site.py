@@ -16,11 +16,13 @@ CONFIG = {
     "GITHUB_USER": "ivandiv13",
     "REPO": "opora-legal",
     "SUPPORT_EMAIL": "ivandiv13@gmail.com",
-    "EFFECTIVE_DATE": "6 October 2026",
-    # TODO(Иван): регион базы — Supabase → Project Settings → General → Region
-    "SUPABASE_REGION": "[SUPABASE_REGION]",
-    # TODO(Иван): у кого арендован VPS в Нидерландах (Hetzner, Aeza, …)
-    "VPS_PROVIDER": "[VPS_PROVIDER]",
+    # Совпадает с `OnboardingConsent.documentsVersion` в приложении: в базе
+    # записано, с какой редакцией человек согласился. Меняешь текст — меняй оба.
+    "EFFECTIVE_DATE": "7 October 2026",
+    # Supabase → Primary Database: eu-west-1
+    "SUPABASE_REGION": "the European Union (Ireland)",
+    # VPS с api_main и ботом, локация — Нидерланды
+    "VPS_PROVIDER": "FirstVDS",
 }
 CONFIG["WEBSITE"] = f"https://{CONFIG['GITHUB_USER']}.github.io/{CONFIG['REPO']}"
 # ─────────────────────────────────────────────────────────────

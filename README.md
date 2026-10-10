@@ -3,17 +3,18 @@
 Публичные страницы Opora: Privacy Policy, Terms of Use, Safety, Support.
 Статика из markdown, хостится на GitHub Pages — так же, как `voca-legal`.
 
-Сейчас лежит черновиком внутри репо приложения. Для публикации папку
-выносим в отдельный **публичный** репозиторий `opora-legal` (Pages на
-приватных репо только в платных тарифах):
+Источник правды — эта папка в репо приложения. Публикуется она в отдельный
+**публичный** репозиторий [`ivandiv13/opora-legal`](https://github.com/ivandiv13/opora-legal)
+(Pages на приватных репо только в платных тарифах) через `git subtree` —
+второй копии, которую надо держать в синхроне, нет.
+
+Выложить после правки (из корня репо приложения, изменения закоммичены):
 
 ```sh
-cp -R legal ~/Documents/Products/opora-legal && cd ~/Documents/Products/opora-legal
-git init && git add . && git commit -m "Legal and support pages"
-gh repo create opora-legal --public --source=. --push
+git subtree push --prefix legal https://github.com/ivandiv13/opora-legal.git main
 ```
 
-Потом Settings → Pages → Deploy from a branch → `main`, `/ (root)`.
+Pages включён на `main`, `/ (root)`; через минуту-две страницы обновятся.
 
 ## Как править
 
@@ -22,7 +23,9 @@ gh repo create opora-legal --public --source=. --push
 2. Значения-подстановки (`[SUPPORT_EMAIL]`, `[SUPABASE_REGION]`…) — в `CONFIG`
    наверху `src/build_site.py`. Сборка ругнётся, если что-то не заполнено.
 3. `python3 -m pip install markdown && python3 src/build_site.py`
-4. Коммит и пуш.
+4. Коммит, потом `git subtree push` (см. выше).
+5. Поменялся смысл — подними `EFFECTIVE_DATE` в `CONFIG` и
+   `OnboardingConsent.documentsVersion` в приложении.
 
 HTML генерируется — руками не править.
 
